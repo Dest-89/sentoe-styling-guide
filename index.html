@@ -985,6 +985,361 @@
                 margin-bottom: 40px;
             }
         }
+
+        /* ==================== MOBILE RESPONSIVE STYLES ==================== */
+        @media screen and (max-width: 768px) {
+            body {
+                padding: 0;
+                background: var(--white);
+            }
+
+            .page {
+                width: 100%;
+                min-height: auto;
+                box-shadow: none;
+                margin-bottom: 0;
+                border-bottom: 1px solid #eee;
+            }
+
+            /* Cover Page */
+            .cover-content {
+                padding: 30px 25px;
+            }
+
+            .cover-logo {
+                width: 100px;
+            }
+
+            .cover-title {
+                font-size: 28pt;
+            }
+
+            .cover-subtitle {
+                font-size: 14pt;
+            }
+
+            .cover-tagline {
+                font-size: 10pt;
+                letter-spacing: 2px;
+            }
+
+            .cover-footer {
+                flex-direction: column;
+                gap: 10px;
+                text-align: center;
+            }
+
+            /* Welcome Page */
+            .welcome {
+                padding: 30px 25px;
+                height: auto;
+                display: block;
+            }
+
+            .welcome-header {
+                padding-bottom: 20px;
+            }
+
+            .welcome-logo {
+                width: 80px;
+            }
+
+            .welcome-content {
+                display: block;
+                padding: 30px 0;
+            }
+
+            .welcome-text h1 {
+                font-size: 24pt;
+                margin-bottom: 20px;
+            }
+
+            .welcome-text p {
+                font-size: 10pt;
+            }
+
+            .welcome-image {
+                height: 250px;
+                margin-top: 25px;
+            }
+
+            .whats-inside {
+                padding: 20px;
+            }
+
+            .toc-grid {
+                grid-template-columns: 1fr;
+                gap: 10px;
+            }
+
+            /* Section Headers */
+            .section-header {
+                flex-direction: column;
+                margin-bottom: 25px;
+            }
+
+            .section-title {
+                font-size: 22pt;
+            }
+
+            .section-subtitle {
+                max-width: 100%;
+                margin-top: 10px;
+            }
+
+            /* Colors Page */
+            .colors-page,
+            .avoid-page,
+            .grooming-page,
+            .bring-page,
+            .usage-page {
+                padding: 30px 25px;
+            }
+
+            .color-mood-board {
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: auto;
+                gap: 10px;
+            }
+
+            .color-card {
+                height: 150px;
+            }
+
+            .color-card.large {
+                grid-row: span 1;
+            }
+
+            /* Avoid Page */
+            .avoid-grid {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+
+            .avoid-card {
+                height: 180px;
+            }
+
+            .avoid-x {
+                width: 60px;
+                height: 60px;
+            }
+
+            /* Outfit Pages */
+            .outfit-page {
+                display: block;
+            }
+
+            .outfit-sidebar {
+                padding: 30px 25px;
+            }
+
+            .outfit-sidebar h2 {
+                font-size: 22pt;
+            }
+
+            .outfit-mood-board {
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: auto;
+            }
+
+            .outfit-mood-board img {
+                height: 200px;
+            }
+
+            .outfit-mood-board .feature {
+                grid-row: span 1;
+            }
+
+            /* Grooming Page */
+            .grooming-grid {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+
+            .grooming-card {
+                padding: 20px;
+            }
+
+            .grooming-timeline {
+                flex-direction: column;
+                gap: 20px;
+                padding: 20px;
+            }
+
+            .timeline-item {
+                display: flex;
+                align-items: center;
+                gap: 15px;
+                text-align: left;
+            }
+
+            /* Bring Page */
+            .bring-layout {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .bring-image {
+                grid-column: span 1;
+                height: 150px;
+            }
+
+            /* Timeline Page */
+            .timeline-page {
+                padding: 30px 25px;
+            }
+
+            .day-timeline::before {
+                left: 50px;
+            }
+
+            .timeline-event {
+                gap: 20px;
+            }
+
+            .timeline-time {
+                width: 50px;
+                font-size: 11pt;
+            }
+
+            .timeline-content h4 {
+                font-size: 12pt;
+            }
+
+            /* Tips Page */
+            .tips-page {
+                display: block;
+            }
+
+            .tips-image {
+                height: 250px;
+            }
+
+            .tips-content {
+                padding: 30px 25px;
+            }
+
+            .tips-content h2 {
+                font-size: 22pt;
+                margin-bottom: 20px;
+            }
+
+            .tip-item {
+                gap: 15px;
+                margin-bottom: 20px;
+                padding-bottom: 20px;
+            }
+
+            .tip-number {
+                width: 30px;
+                height: 30px;
+                font-size: 12pt;
+            }
+
+            /* Usage Page */
+            .usage-grid {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+
+            .usage-card {
+                padding: 25px;
+            }
+
+            .platform-icon {
+                width: 50px;
+                height: 50px;
+            }
+
+            .platform-icon svg {
+                width: 24px;
+                height: 24px;
+            }
+
+            /* Contact Page */
+            .contact-page {
+                padding: 30px 25px;
+                height: auto;
+                min-height: 100vh;
+            }
+
+            .contact-content h2 {
+                font-size: 26pt;
+            }
+
+            .contact-details {
+                flex-direction: column;
+                gap: 25px;
+            }
+
+            .contact-card {
+                padding: 25px;
+            }
+
+            .contact-cta {
+                padding: 15px 30px;
+                font-size: 12pt;
+            }
+
+            .contact-logo {
+                width: 120px;
+            }
+        }
+
+        /* Extra small devices */
+        @media screen and (max-width: 480px) {
+            .cover-title {
+                font-size: 22pt;
+            }
+
+            .cover-subtitle {
+                font-size: 12pt;
+            }
+
+            .welcome-text h1,
+            .section-title {
+                font-size: 20pt;
+            }
+
+            .color-mood-board {
+                grid-template-columns: 1fr;
+            }
+
+            .color-card {
+                height: 180px;
+            }
+
+            .outfit-mood-board {
+                grid-template-columns: 1fr;
+            }
+
+            .outfit-mood-board img {
+                height: 250px;
+            }
+
+            .timeline-event {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .timeline-time {
+                width: 100%;
+                text-align: left;
+            }
+
+            .day-timeline::before {
+                display: none;
+            }
+
+            .timeline-dot {
+                display: none;
+            }
+
+            .contact-content h2 {
+                font-size: 22pt;
+            }
+        }
     </style>
 </head>
 <body>
